@@ -1,26 +1,31 @@
-$(document).ready(function () {
-    $("#home-container").show();
-    $("#consult-container").hide();
-    $("#contact-container").hide();
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    $('#home').click(function () {
-        $("#principal-container").hide();
-        $("#home-container").show();
-        $("#consult-container").hide();
-        $("#contact-container").hide();
-    })
+function changeSlidesIndex(index) {
+    slideIndex += index;
+    showSlides(slideIndex);
+}
 
-    $('#consult').click(function () {
-        $("#principal-container").hide();
-        $("#home-container").hide();
-        $("#consult-container").show();
-        $("#contact-container").hide();
-    })
+function currentSlide() {
+    showSlides(slideIndex);
+}
 
-    $('#contact').click(function () {
-        $("#principal-container").hide();
-        $("#home-container").hide();
-        $("#consult-container").hide();
-        $("#contact-container").show();
-    })
-});
+function showSlides(numberSlides) {
+    const Slides = document.getElementsByClassName("slides"),
+          Dots = document.getElementsByClassName("dot");
+
+    if (numberSlides > Slides.length) { 
+        slideIndex = 1
+    }
+    if (numberSlides < 1) { 
+        slideIndex = Slides.length 
+    }
+    for (i = 0; i < Slides.length; i++) {
+        Slides[i].style.display = "none";
+    }
+    for (i = 0; i < Dots.length; i++) {
+        Dots[i].className = Dots[i].className.replace(" active", "");
+    }
+    Slides[slideIndex - 1].style.display = "block";
+    Dots[slideIndex - 1].className += " active";
+}
