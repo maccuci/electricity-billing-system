@@ -47,8 +47,8 @@ img {
     margin-top: 35px;
 }
 
-.contact-container h1 {
-    margin-left: 4%;
+.contact-container>h1 {
+    margin-left: 2%;
 }
 
 .contact-container>ul {
