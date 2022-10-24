@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+:root {
+    --yellow: #f8e91a;
+    --green: #3e8404;
+    --dark-gray: #333;
+    --blue-gray: #CCD1D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat';
+    background: var(--blue-gray);
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    color: var(--dark-gray);
+}
+
+.sub-title {
+    text-align: center;
+    margin-top: -0.8em;
+    color: var(--dark-gray);
+}
+
+.home-container {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.contact-container {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.contact-container > ul {
+    list-style: none;
+}
+
+.contact-container > ul > li > ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--dark-gray);
+    margin: 0 0.3em 0.3em 0;
+    margin-top: 5px;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--dark-gray);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background-color: var(--dark-gray);
+}
+
+.btn-center {
+    text-align: center;
+}
+
+@media all and (max-width:30em) {
+    .button1 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "electricity-billing-system",
+  "version": "1.0.0",
+  "description": "trabalho para a faculdade da matéria de desenvolviment web (html, css, javascript e php)",
+  "main": "script.js",
+  "repository": "https://github.com/maccuci/electricity-billing-system.git",
+  "author": "Tony <me@maccuci.studio>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1"
+  }
+}
