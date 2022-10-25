@@ -85,14 +85,15 @@
 
     <div id="profile-container" class="profile-container">
         <div class="login-page">
+            <h1>Seja bem-vindo(a) de volta!</h1>
             <div class="form">
-                <form class="register-form">
-                    <input type="text" placeholder="Nome de usuário" />
-                    <input type="password" placeholder="Senha" />
-                    <input type="password" placeholder="Repetir senha" />
-                    <input type="text" placeholder="Endereço" />
-                    <input type="text" placeholder="CEP" />
-                    <input type="text" placeholder="Email" />
+                <form action="./php/register.php" method="post" class="register-form">
+                    <input type="text" id="username" placeholder="Nome de usuário" />
+                    <input type="password" id="password" placeholder="Senha" />
+                    <input type="password" id="reapet-password" placeholder="Repetir senha" />
+                    <input type="text" id="address" placeholder="Endereço" />
+                    <input type="text" id="cep" placeholder="CEP" />
+                    <input type="email" id="email" placeholder="Email" />
                     <button>Cadastrar</button>
                     <p class="message">Já possui uma conta? <a href="#">Entrar</a></p>
                 </form>
@@ -162,12 +163,19 @@
                     <br>Ilhéus
                 </p>
             </div>
+            <div class="box-local">
+                <p>Mato Grosso:
+                    <br>Cuiabá
+                    <br>Várzea Grande
+                    <br>Cáceres
+                </p>
+            </div>
         </div>
     </div>
 
     <footer>
         <div class="footer-dynamic" id="footer-dynamic">
-            <h3>Cebra &copy; 2022</h3>
+            <p>Cebra &copy; 2022</p>
         </div>
     </footer>
 
