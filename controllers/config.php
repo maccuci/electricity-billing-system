@@ -1,5 +1,6 @@
 <?php
 session_start();
+$errors = array();
 
 $connection = mysqli_connect("localhost", "root", "", "cebra");
 

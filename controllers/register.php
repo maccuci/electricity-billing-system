@@ -6,7 +6,6 @@ $email = "";
 $address = "";
 $cep = "";
 $password = "";
-$errors = array();
 
 if (isset($_POST["register"])) {
     $username = mysqli_real_escape_string($connection, $_POST['username']);
